@@ -1,0 +1,215 @@
+html,
+body {
+  background: #efefef url(images/fon.jpg) no-repeat center top fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0; 
+  font: 16px/24px Arial, Tahoma, sans-serif;
+  height: 100%;
+  min-width: 1000px;
+}
+a {text-decoration: none}
+
+/*Структура сайта*/
+
+div.mid {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+/*Шапка сайта*/
+
+div.header {
+	width: 100%;
+	height: 100px;
+	margin:0 auto;
+	background: #1a0b0b;
+}
+div.topmenu {
+  float: right;
+  height:80px;
+  line-height: 80px;}
+div.topmenu a {
+  margin: 0 0 0 10px; 
+  color: #feb386;
+}
+div.topmenu a:hover {color: #fff;}
+
+/*Меню сайта*/
+
+.basic {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-main {
+  list-style: none;
+  margin: 1px 0 5px;
+  padding: 25px 0 5px;
+  text-align: center;
+  background: #1a0b0b;
+}
+.menu-main li {display: inline-block;}
+.menu-main li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu-main li:last-child:after {content: none;}
+.menu-main a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 17px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu-main a, .menu-main a:visited {color: #9d999d;}
+.menu-main a.current, .menu-main a:hover {color: #feb386;}
+.menu-main a:before,
+.menu-main a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: -5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu-main a:hover:before, .menu-main .current:before {left: 0;}
+.menu-main a:hover:after, .menu-main .current:after {right: 0;}   
+@media (max-width: 550px) {
+  .menu-main {padding-top: 0;}
+  .menu-main li {display: block;}
+  .menu-main li:after {content: none;}
+  .menu-main a {
+    padding: 25px 0 20px; 
+    margin: 0 30px;
+  }
+}
+
+/*Контент сайта*/
+div.content {
+	margin: 20px;
+	flex: 1 0 auto;
+}
+div.left {
+  width: 49%;
+  float:left;
+  text-align: center;
+  color: #606060;
+}
+div.right {
+  width: 49%; 
+  float:right;
+  text-align: center;
+  color: #606060;
+}
+div.news1 {
+  font-family: Lucida Sans Unicode;
+  font-style: inherit;
+  text-align: justify;
+}
+div.news2 {
+  font-family: Lucida Sans Unicode;
+  font-style: inherit;
+  text-align: justify;
+}
+
+/*Подвал сайта*/
+
+div.footer {
+	width: 100%;
+	height: 270px;
+	margin:0 auto;
+	background: #2D1313;
+	flex: 0 0 auto;
+}
+div.row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width:100%;
+  text-align:justify;
+  column-width: 300px;
+  -moz-column-width: 300px;
+  -webkit-column-width: 300px;
+  column-gap: 40px;
+  -moz-column-gap: 40px;
+  -webkit-column-gap: 40px;
+  column-rule: 1px solid #feb386;
+  -moz-column-rule: 1px solid #feb386;
+  -webkit-column-rule: 1px solid #feb386;
+}
+li {
+  font-family: Lucida Sans Unicode;
+  list-style-type: none;
+}
+ul {
+  margin-left: 30px;
+  padding-left: 30px;
+}
+h3 {
+  font-family: Lucida Sans Unicode;
+  text-align: center;
+  color: #feb386;
+}
+div.bottom {
+  width: 100%;
+  height: 120px;
+  margin:0 auto;
+  background: #1a0b0b;
+}
+div.bottom a:hover {color: #fff;}
+div.bottom a {
+  color: #feb386;
+}
+div.column a {
+  color: #9d999d;
+}
+div.column a:hover {color: #feb386;}
+div.cont {
+  font-family: Lucida Sans Unicode;
+  color: #fff;
+  text-align: justify;
+  font-size: 11px;
+}
+.scrollup {
+  width: 40px;
+  height: 40px;
+  opacity: 0.3;
+  position: fixed;
+  bottom: 400px;
+  right: 250px;
+  display: none;
+  text-indent: -9999px;
+  background: url('images/icon_top.png') no-repeat;
+}
+@import url(https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css);
+.social a{
+    text-align:center;
+    width:46px;
+    height:46px;
+    float:left;
+    background:#fff;
+    border:1px solid #ccc;
+    box-shadow:0 2px 4px rgba(0,0,0,0.15), inset 0 0 50px rgba(0,0,0,0.1);
+    border-radius:46px;
+    margin:0 10px 10px 0;
+    padding:6px;
+    color:#000;
+}
+.twitter a:hover{background:#00acee;color:#fff;}
+.instagram a:hover{background:#3f729b;color:#fff;}
+.facebook a:hover{background:#3b5998;color:#fff;}
+.vk a:hover{background:#5d84ae;color:#fff;}
+.odnoklassniki a:hover{background:#f93;color:#fff;}

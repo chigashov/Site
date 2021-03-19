@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../images/icon.jpg">
+    <link rel="stylesheet" href="../style.css" media="all">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript">
+$(document).ready(function(){
+ 
+$(window).scroll(function(){
+if ($(this).scrollTop() > 100) {
+$('.scrollup').fadeIn();
+} else {
+$('.scrollup').fadeOut();
+}
+});
+ 
+$('.scrollup').click(function(){
+$("html, body").animate({ scrollTop: 0 }, 600);
+return false;
+});
+ 
+});
+</script>
+</head>
+<body>
+<div class="basic"> 
+    <div class="header" >
+        <div class="mid">
+            <header>
+                <div class="topmenu">
+                    <aside>
+                        <a href="https://www.bmw.ru/ru/topics/offers-and-services/bmw-service-spare-parts-accessories.html">Сервис</a>
+                        <a href="https://www.bmw.ru/ru/fastlane/dealer-locator.html#/dlo/RU/ru/BMW_BMWM">Дилеры</a>
+                        <a href="#">О нас</a>
+                        <a href="https://www.bmw.ru/ru/ssl/forms/contacts.html#/bookmark=aHR0cHM6Ly9jcm0uYm13LnJ1L2NvbnRhY3Q=">Контакты</a>
+                    </aside>
+                </div>
+                <img src="../images/logo.jpg" width="200" height="100" alt="Логотип сайта" title="Логотип сайта">
+            </header>
+        </div>
+    </div>
+     <div class="menu" >
+        <div class="mid">
+            <nav>
+                <ul class="menu-main">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="models/index.html" class="current" >Models</a></li>
+                    <li><a href="../performance/index.html">M Performance</a></li>
+                    <li><a href="../news/index.html">News</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+     <div class="content" >
+        <div class="mid">
+            <div class="left">
+				<img src="../images/x5.jpg" width="490" height="240" alt="BMW X5" title="BMW X5"><br>BMW X5<br><br>
+                <img src="../images/z4.jpg" width="490" height="240" alt="BMW Z4" title="BMW Z4"><br>BMW Z4<br><br>
+                <img src="../images/1.jpg" width="490" height="240" alt="BMW 1 series" title="BMW 1 series"><br>BMW 1 series<br>
+            </div>
+            <div class="right">
+				<img src="../images/x3.jpg" width="490" height="240" alt="BMW X3" title="BMW X3"><br>BMW X3<br><br>
+				<img src="../images/i8.jpg" width="490" height="240" alt="BMW i8" title="BMW i8"><br>BMW i8<br><br>
+                <img src="../images/8.jpg" width="490" height="240" alt="BMW 8 series" title="BMW 8 series"><br>BMW 8 series<br>
+            </div>
+		</div>
+    </div>
+    <div class="footer">
+        <div class="mid">
+            <footer>
+                <div class="row">
+                    <div class="column">
+                        <br>
+                        <h3>Get started</h3>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Downloads</a></li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <br>
+                        <h3>About us</h3>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                            <br>
+                        </ul>
+                    </div>
+                    <div class="column">
+                        <br>
+                        <h3>Support</h3>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <div class="bottom">
+            <div class="mid">
+                <div class="cont">
+                © 2018-2019 Чигашов Валерий, по всем вопросам пишите по адресу <a href="#"> chigashow2012@yandex.ru </a><br>
+                Коммерческое использование материалов данного сайта запрещено.<br>
+                <div class="social twitter">
+                    <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter fa-4x"></i></a>
+                </div>
+                <div class="social instagram">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa fa-instagram fa-4x"></i></a>
+                </div>
+                <div class="social facebook">
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa fa-facebook fa-4x"></i></a>    
+                </div>
+                <div class="social vk">
+                    <a href="https://vk.com/" target="_blank"><i class="fa fa-vk fa-4x"></i></a>    
+                </div>
+                <div class="social odnoklassniki">
+                    <a href="https://ok.ru/" target="_blank"><i class="fa fa-odnoklassniki fa-4x"></i></a>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="#" class="scrollup">Наверх</a>
+</body>
+</html>
